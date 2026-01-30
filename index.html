@@ -293,7 +293,8 @@ color:#fff
         </div>
     </section>
 
-   <section id="certification" class="reveal">
+
+ <section id="certification" class="reveal">
       <h3>certification</h3>
       <div class="certification-grid">
         <div class="cert-card" id="open-certificates">
@@ -329,6 +330,7 @@ color:#fff
 
 
 
+
  <a href="#" target="_blank">
         <img src="cert2.jpg">
         <p>Cyber Security Certificate</p>
@@ -337,6 +339,32 @@ color:#fff
     </div>
   </div>
 </div>
+
+
+<script>
+const openBtn=document.getElementById("open-certificates");
+const modal=document.getElementById("certModal");
+const closeBtn=document.querySelector(".close-modal");
+
+openBtn.onclick=()=>modal.classList.add("show");
+closeBtn.onclick=()=>modal.classList.remove("show");
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove("show")}
+</script
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
 
 
 
