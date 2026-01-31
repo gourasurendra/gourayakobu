@@ -359,7 +359,7 @@ color:#fff
           <h4>6+</h4>
            <p>Online Certification</p>
       </div>
-        <div class="cert-card" id="open-certificates"><h4>0+</h4><p>Projects Completed</p></div>
+        <div class="cert-card" id="open-projects"><h4>0+</h4><p>Projects Completed</p></div>
         
         <div class="cert-card"><h4>0</h4><p>Years Experience</p></div>
       </div>
@@ -420,7 +420,15 @@ openBtn.onclick=()=>modal.classList.add("show");
 closeBtn.onclick=()=>modal.classList.remove("show");
 modal.onclick=e=>{if(e.target===modal)modal.classList.remove("show")}
 </script>
+<script>
+const openBtn=document.getElementById("open-projects");
+const modal=document.getElementById("certModal");
+const closeBtn=document.querySelector(".close-modal");
 
+openBtn.onclick=()=>modal.classList.add("show");
+closeBtn.onclick=()=>modal.classList.remove("show");
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove("show")}
+</script>
 
 
     
